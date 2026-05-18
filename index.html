@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE FIT - Premium Gym Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">ELITE FIT</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                <li><a href="#membership" class="nav-link">Plans</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="hero-title" data-aos="fade-up">
+                    Build Your Body.<br>
+                    <span class="neon-text">Transform Your Life.</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Join thousands of fitness enthusiasts at ELITE FIT
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <button class="btn btn-primary" onclick="scrollToSection('booking')">Join Now</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('booking')">Book Free Trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card" data-aos="zoom-in">
+                <h3 class="stat-number" data-target="5000">0</h3>
+                <p class="stat-label">Active Members</p>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3 class="stat-number" data-target="50">0</h3>
+                <p class="stat-label">Expert Trainers</p>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="stat-number" data-target="15">0</h3>
+                <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                <h3 class="stat-number" data-target="98">0</h3>
+                <p class="stat-label">Success Rate %</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Everything you need to achieve your fitness goals</p>
+
+            <div class="services-grid">
+                <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-img-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/service_weight_1777799557158.png" alt="Weight Training" class="service-img">
+                    </div>
+                    <h3>Weight Training</h3>
+                    <p>State-of-the-art equipment and expert guidance for strength and muscle building</p>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-img-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/service_cardio_1777799575037.png" alt="Cardio & Endurance" class="service-img">
+                    </div>
+                    <h3>Cardio & Endurance</h3>
+                    <p>Advanced cardio equipment to boost your stamina and cardiovascular health</p>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-img-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/service_crossfit_1777799602037.png" alt="CrossFit Training" class="service-img">
+                    </div>
+                    <h3>CrossFit Training</h3>
+                    <p>High-intensity functional training for maximum results in minimal time</p>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-img-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/service_personal_1777799617834.png" alt="Personal Training" class="service-img">
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one coaching tailored to your specific fitness goals and needs</p>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-img-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/service_yoga_1777799633461.png" alt="Yoga & Flexibility" class="service-img">
+                    </div>
+                    <h3>Yoga & Flexibility</h3>
+                    <p>Enhance flexibility, balance, and mental wellness through guided yoga sessions</p>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-img-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/service_transformation_1777799648110.png" alt="Body Transformation" class="service-img">
+                    </div>
+                    <h3>Body Transformation</h3>
+                    <p>Complete 12-week programs combining nutrition guidance and intensive training</p>
+                    <div class="card-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <h2 class="section-title">Meet Our Elite Trainers</h2>
+            <p class="section-subtitle">World-class fitness professionals ready to transform you</p>
+
+            <div class="trainers-grid">
+                <div class="trainer-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trainer-image-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/trainer_alex_1777799484655.png" alt="Alex Kumar" class="trainer-img">
+                    </div>
+                    <h3 class="trainer-name">Alex Kumar</h3>
+                    <p class="trainer-specialty">Strength & Hypertrophy</p>
+                    <div class="trainer-badges">
+                        <span class="badge">15+ Years</span>
+                        <span class="badge">100+ Transformations</span>
+                    </div>
+                    <p class="trainer-bio">Certified personal trainer specializing in muscle building and strength
+                        training</p>
+                </div>
+
+                <div class="trainer-card tilt-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="trainer-image-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/trainer_sarah_1777799499281.png" alt="Sarah Johnson" class="trainer-img">
+                    </div>
+                    <h3 class="trainer-name">Sarah Johnson</h3>
+                    <p class="trainer-specialty">CrossFit & Cardio</p>
+                    <div class="trainer-badges">
+                        <span class="badge">12+ Years</span>
+                        <span class="badge">CrossFit Level 2</span>
+                    </div>
+                    <p class="trainer-bio">High-intensity training expert focused on functional fitness and endurance
+                    </p>
+                </div>
+
+                <div class="trainer-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trainer-image-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/trainer_rajesh_1777799526686.png" alt="Rajesh Desai" class="trainer-img">
+                    </div>
+                    <h3 class="trainer-name">Rajesh Desai</h3>
+                    <p class="trainer-specialty">Yoga & Flexibility</p>
+                    <div class="trainer-badges">
+                        <span class="badge">18+ Years</span>
+                        <span class="badge">Certified Yoga Instructor</span>
+                    </div>
+                    <p class="trainer-bio">Wellness coach dedicated to holistic fitness and mental clarity</p>
+                </div>
+
+                <div class="trainer-card tilt-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="trainer-image-wrapper">
+                        <img src="file:///C:/Users/AVISHKAR/.gemini/antigravity/brain/01031f87-d120-4389-bb02-2af279e0262a/trainer_maya_1777799541315.png" alt="Maya Patel" class="trainer-img">
+                    </div>
+                    <h3 class="trainer-name">Maya Patel</h3>
+                    <p class="trainer-specialty">Body Transformation</p>
+                    <div class="trainer-badges">
+                        <span class="badge">10+ Years</span>
+                        <span class="badge">Nutrition Expert</span>
+                    </div>
+                    <p class="trainer-bio">Complete transformation specialist combining fitness, nutrition, and
+                        lifestyle coaching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <h2 class="section-title">Membership Plans</h2>
+            <p class="section-subtitle">Choose the perfect plan for your fitness journey</p>
+
+            <div class="plans-grid">
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <p class="plan-duration">Monthly</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-amount">$29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Gym Access (5 days/week)</li>
+                        <li>✓ Basic Equipment Usage</li>
+                        <li>✓ Locker Room Access</li>
+                        <li>✗ Personal Training</li>
+                        <li>✗ Premium Classes</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+
+                <div class="plan-card popular" data-aos="fade-up" data-aos-delay="150">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="plan-header">
+                        <h3>Pro</h3>
+                        <p class="plan-duration">Quarterly</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-amount">$89</span>
+                        <span class="price-period">/3 months</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Unlimited Gym Access</li>
+                        <li>✓ All Equipment & Machines</li>
+                        <li>✓ Group Classes (Unlimited)</li>
+                        <li>✓ 2 Personal Training Sessions</li>
+                        <li>✓ Nutrition Consultation</li>
+                    </ul>
+                    <button class="btn btn-primary">Join Now</button>
+                </div>
+
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-header">
+                        <h3>Elite</h3>
+                        <p class="plan-duration">Yearly</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-amount">$299</span>
+                        <span class="price-period">/year</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ VIP Unlimited Access</li>
+                        <li>✓ Priority Equipment Booking</li>
+                        <li>✓ All Premium Classes</li>
+                        <li>✓ 8 Personal Training Sessions</li>
+                        <li>✓ Dedicated Nutrition Plan</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Free Trial</h2>
+            <p class="section-subtitle">Start your transformation journey today</p>
+
+            <div class="booking-container" data-aos="fade-up">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                        <span class="error-message" id="dateError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time *</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select a time slot</option>
+                            <option value="06:00 AM">06:00 AM</option>
+                            <option value="07:00 AM">07:00 AM</option>
+                            <option value="08:00 AM">08:00 AM</option>
+                            <option value="05:00 PM">05:00 PM</option>
+                            <option value="06:00 PM">06:00 PM</option>
+                            <option value="07:00 PM">07:00 PM</option>
+                            <option value="08:00 PM">08:00 PM</option>
+                        </select>
+                        <span class="error-message" id="timeError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="program">Interested In *</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="strength">Strength Training</option>
+                            <option value="cardio">Cardio & Endurance</option>
+                            <option value="crossfit">CrossFit</option>
+                            <option value="personal">Personal Training</option>
+                            <option value="yoga">Yoga & Flexibility</option>
+                            <option value="transformation">Body Transformation</option>
+                        </select>
+                        <span class="error-message" id="programError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
+                        Book Free Trial
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We're here to answer your questions</p>
+
+            <div class="contact-grid" data-aos="fade-up">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <h3>Address</h3>
+                        <p>123 Fitness Avenue<br>Gym City, GC 12345</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>info@elitefit.com<br>support@elitefit.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 6 AM - 10 PM<br>Sat - Sun: 8 AM - 8 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.00601!3d40.71282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ0LjIiTiA3NMKwMDAnMTMuNSJX!5e0!3m2!1sen!2sus!4v1234567890123"
+                        width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">ELITE FIT</span>
+                    </div>
+                    <p class="footer-description">Transform your life through fitness excellence. We provide state-of-the-art facilities and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">𝕏</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">▶</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#booking">Book Trial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive fitness tips, exclusive offers, and latest news.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELITE FIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
