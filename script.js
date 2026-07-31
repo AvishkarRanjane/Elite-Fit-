@@ -198,10 +198,13 @@ function initializeFormValidation() {
 
             // Validate date
             const date = document.getElementById('date');
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
             if (!date.value) {
                 showError('date', 'Please select a date');
                 isValid = false;
-            } else if (new Date(date.value) < new Date()) {
+            } else if (new Date(date.value) < today) {
                 showError('date', 'Please select a future date');
                 isValid = false;
             }
@@ -711,11 +714,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-            card.style.transition = 'transform 0.5s ease, border-color 0.3s, box-shadow 0.3s';
+            card.style.transition = 'transform 0.5s ease-out, border-color 0.3s, box-shadow 0.3s';
         });
         
         card.addEventListener('mouseenter', () => {
-            card.style.transition = 'none';
+            card.style.transition = 'transform 0.1s ease-out, border-color 0.3s, box-shadow 0.3s';
         });
     });
 
@@ -732,3 +735,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// ============================================
+// TRAINER MODAL FUNCTIONALITY
+// ============================================
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("trainerModal");
+    const closeModal = document.querySelector(".close-modal");
+    const trainerCards = document.querySelectorAll(".trainer-card");
+    
+    if (modal && closeModal) {
+        trainerCards.forEach(card => {
+            // make cards clickable
+            card.style.cursor = "pointer";
+            card.addEventListener("click", () => {
+                const name = card.querySelector(".trainer-name").textContent;
+                const specialty = card.querySelector(".trainer-specialty").textContent;
+                const bio = card.querySelector(".trainer-bio").textContent;
+                const imgSrc = card.querySelector(".trainer-img").src;
+                
+                document.getElementById("modalName").textContent = name;
+                document.getElementById("modalSpecialty").textContent = specialty;
+                document.getElementById("modalBio").textContent = bio;
+                document.getElementById("modalImg").src = imgSrc;
+                
+                modal.classList.add("show");
+            });
+        });
+        
+        closeModal.addEventListener("click", () => {
+            modal.classList.remove("show");
+        });
+        
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.remove("show");
+            }
+        });
+    }
+});
+
